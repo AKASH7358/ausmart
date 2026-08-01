@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: mart_products
+    description: "Final analytics table with pricing intelligence"
+    columns:
+      - name: product_id
+        data_tests:
+          - unique
+          - not_null
+      - name: price_status
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['High Discount', 'Moderate Discount', 'Full Price']
+      - name: price_tier
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['Budget', 'Mid-range', 'Premium']

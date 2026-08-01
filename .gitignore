@@ -1,0 +1,9 @@
+.DS_Store
+logs/
+transform/logs/
+transform/target/
+transform/.DS_Store
+transform/models/.DS_Store
+__pycache__/
+*.pyc
+.env

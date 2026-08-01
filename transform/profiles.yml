@@ -1,0 +1,11 @@
+transform:
+  target: dev
+  outputs:
+    dev:
+      type: athena
+      s3_staging_dir: s3://ausmart-data-lake/athena-results/
+      s3_data_dir: s3://ausmart-data-lake/processed/
+      region_name: ap-southeast-2
+      database: awsdatacatalog
+      schema: analytics
+      threads: 1
